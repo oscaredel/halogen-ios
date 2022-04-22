@@ -45,7 +45,7 @@ final class AddUpdateIdeaViewModel: ObservableObject {
         Task {
             do {
                 if isUpdating {
-                    // updateIdea()
+                    try await updateIdea()
                 } else {
                     try await addIdea()
                 }
@@ -54,5 +54,16 @@ final class AddUpdateIdeaViewModel: ObservableObject {
             }
             completion()
         }
+    }
+    
+    func updateIdea() async throws {
+        let urlString = Constants.baseURL + Endpoints.ideas
+        guard let url = URL(string: urlString) else {
+            throw HttpError.badURL
+        }
+        
+        let ideaToUpdate = Idea(id: ideaID, title: ideaTitle)
+        try await HttpClient.shared.sendData(to: url, object: ideaToUpdate,
+                                             httpMethod: HttpMethods.PUT.rawValue)
     }
 }

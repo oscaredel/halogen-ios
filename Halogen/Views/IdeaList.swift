@@ -19,13 +19,13 @@ struct IdeaList: View {
                 ForEach(viewModel.ideas) {
                     idea in
                     Button {
-                        print("selected")
+                        modal = .update(idea)
                     } label: {
                         Text(idea.title)
                             .font(.title3)
                             .foregroundStyle(Color(.label))
                     }
-                }
+                }.onDelete(perform: viewModel.delete)
             }
             .navigationTitle(Text("💡 Ideas"))
             .toolbar {

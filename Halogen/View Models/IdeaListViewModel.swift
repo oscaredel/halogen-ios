@@ -23,4 +23,26 @@ class IdeaListViewModel: ObservableObject {
             self.ideas = ideaResponse
         }
     }
+    
+    func delete(at offsets: IndexSet) {
+        offsets.forEach { i in
+            guard let ideaID = ideas[i].id else {
+                return
+            }
+            
+            guard let url = URL(string: Constants.baseURL + Endpoints.ideas + "/\(ideaID)") else {
+                return
+            }
+            
+            Task {
+                do {
+                    try await HttpClient.shared.delete(at: ideaID, url: url)
+                } catch {
+                    print("❌ error: \(error)")
+                }
+            }
+        }
+        
+        ideas.remove(atOffsets: offsets)
+    }
 }
