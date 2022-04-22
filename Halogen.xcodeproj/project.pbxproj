@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6038EAB28132B890030B0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6038EAA28132B890030B0DA /* Assets.xcassets */; };
+		B6038EAE28132C370030B0DA /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6038EAD28132C370030B0DA /* ModalType.swift */; };
+		B6038EB028132D890030B0DA /* AddUpdateIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6038EAF28132D890030B0DA /* AddUpdateIdea.swift */; };
+		B6038EB228132E5B0030B0DA /* AddUpdateIdeaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6038EB128132E5B0030B0DA /* AddUpdateIdeaViewModel.swift */; };
+		B69E60742812E27700F0451F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E60732812E27600F0451F /* HttpClient.swift */; };
+		B69E60762812E41200F0451F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E60752812E41200F0451F /* Constants.swift */; };
 		B6F3CBA12812D34900A94D1D /* HalogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3CBA02812D34900A94D1D /* HalogenApp.swift */; };
-		B6F3CBA32812D34900A94D1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3CBA22812D34900A94D1D /* ContentView.swift */; };
-		B6F3CBA52812D34B00A94D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F3CBA42812D34B00A94D1D /* Assets.xcassets */; };
+		B6F3CBA32812D34900A94D1D /* IdeaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3CBA22812D34900A94D1D /* IdeaList.swift */; };
 		B6F3CBA82812D34B00A94D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F3CBA72812D34B00A94D1D /* Preview Assets.xcassets */; };
+		B6F3CBB42812D58700A94D1D /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3CBB32812D58700A94D1D /* Idea.swift */; };
+		B6F3CBB62812D5E800A94D1D /* IdeaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3CBB52812D5E800A94D1D /* IdeaListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6038EAA28132B890030B0DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6038EAC28132B930030B0DA /* Halogen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Halogen.entitlements; sourceTree = "<group>"; };
+		B6038EAD28132C370030B0DA /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		B6038EAF28132D890030B0DA /* AddUpdateIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateIdea.swift; sourceTree = "<group>"; };
+		B6038EB128132E5B0030B0DA /* AddUpdateIdeaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateIdeaViewModel.swift; sourceTree = "<group>"; };
+		B69E60732812E27600F0451F /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B69E60752812E41200F0451F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B6F3CB9D2812D34900A94D1D /* Halogen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halogen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F3CBA02812D34900A94D1D /* HalogenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalogenApp.swift; sourceTree = "<group>"; };
-		B6F3CBA22812D34900A94D1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B6F3CBA42812D34B00A94D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6F3CBA22812D34900A94D1D /* IdeaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaList.swift; sourceTree = "<group>"; };
 		B6F3CBA72812D34B00A94D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B6F3CBA92812D34B00A94D1D /* Halogen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Halogen.entitlements; sourceTree = "<group>"; };
+		B6F3CBB32812D58700A94D1D /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+		B6F3CBB52812D5E800A94D1D /* IdeaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +66,13 @@
 		B6F3CB9F2812D34900A94D1D /* Halogen */ = {
 			isa = PBXGroup;
 			children = (
+				B6038EAC28132B930030B0DA /* Halogen.entitlements */,
+				B6F3CBB02812D4FB00A94D1D /* Models */,
+				B6F3CBB12812D50000A94D1D /* Views */,
+				B6F3CBAF2812D4E800A94D1D /* View Models */,
+				B6F3CBB22812D51300A94D1D /* Utilities */,
 				B6F3CBA02812D34900A94D1D /* HalogenApp.swift */,
-				B6F3CBA22812D34900A94D1D /* ContentView.swift */,
-				B6F3CBA42812D34B00A94D1D /* Assets.xcassets */,
-				B6F3CBA92812D34B00A94D1D /* Halogen.entitlements */,
+				B6038EAA28132B890030B0DA /* Assets.xcassets */,
 				B6F3CBA62812D34B00A94D1D /* Preview Content */,
 			);
 			path = Halogen;
@@ -67,6 +84,42 @@
 				B6F3CBA72812D34B00A94D1D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6F3CBAF2812D4E800A94D1D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3CBB52812D5E800A94D1D /* IdeaListViewModel.swift */,
+				B6038EB128132E5B0030B0DA /* AddUpdateIdeaViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B6F3CBB02812D4FB00A94D1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3CBB32812D58700A94D1D /* Idea.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6F3CBB12812D50000A94D1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3CBA22812D34900A94D1D /* IdeaList.swift */,
+				B6038EAF28132D890030B0DA /* AddUpdateIdea.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6F3CBB22812D51300A94D1D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B69E60732812E27600F0451F /* HttpClient.swift */,
+				B69E60752812E41200F0451F /* Constants.swift */,
+				B6038EAD28132C370030B0DA /* ModalType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6038EAB28132B890030B0DA /* Assets.xcassets in Resources */,
 				B6F3CBA82812D34B00A94D1D /* Preview Assets.xcassets in Resources */,
-				B6F3CBA52812D34B00A94D1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F3CBA32812D34900A94D1D /* ContentView.swift in Sources */,
+				B69E60742812E27700F0451F /* HttpClient.swift in Sources */,
+				B6038EAE28132C370030B0DA /* ModalType.swift in Sources */,
+				B6F3CBA32812D34900A94D1D /* IdeaList.swift in Sources */,
+				B6F3CBB62812D5E800A94D1D /* IdeaListViewModel.swift in Sources */,
+				B6038EB228132E5B0030B0DA /* AddUpdateIdeaViewModel.swift in Sources */,
 				B6F3CBA12812D34900A94D1D /* HalogenApp.swift in Sources */,
+				B6038EB028132D890030B0DA /* AddUpdateIdea.swift in Sources */,
+				B6F3CBB42812D58700A94D1D /* Idea.swift in Sources */,
+				B69E60762812E41200F0451F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,11 +257,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -251,10 +312,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -274,16 +336,22 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Halogen/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = nofile;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edel.Halogen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -301,16 +369,22 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Halogen/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = nofile;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edel.Halogen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

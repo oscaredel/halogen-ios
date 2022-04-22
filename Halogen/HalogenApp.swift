@@ -11,7 +11,7 @@ import SwiftUI
 struct HalogenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IdeaList()
         }
     }
 }
